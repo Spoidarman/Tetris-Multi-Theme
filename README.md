@@ -1,6 +1,7 @@
 # Advanced Tetris with Dual Themes
 
-![Game Screenshot](screenshot.png) *(Replace with actual screenshot)*
+![Game Screenshot](screenshot.png) 
+![Game Screenshot](screenshot-1.png)
 
 A modern Tetris implementation featuring two distinct visual themes (Cyberpunk and Minimalist) with advanced gameplay mechanics. Built with pure HTML, CSS, and JavaScript.
 
