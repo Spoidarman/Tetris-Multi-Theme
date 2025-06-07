@@ -389,7 +389,6 @@ function drawHold_MOIN() {
   }
 }
 
-// ... (rest of the functions remain the same as in your original script)
 
 function collide_MOIN() {
   const [MATRIX_MOIN, POS_MOIN] = [PLAYER_MOIN.matrix, PLAYER_MOIN.pos];
