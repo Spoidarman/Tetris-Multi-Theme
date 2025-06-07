@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tetris_MOIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyberpunk-theme_MOIN">
+    <div class="theme-switcher_MOIN">
+        <button id="theme-btn_MOIN" class="theme-btn_MOIN cyberpunk-active_MOIN">CYBERPUNK</button>
+        <button id="minimal-btn_MOIN" class="theme-btn_MOIN">MINIMAL</button>
+    </div>
+    
+    <div class="game-container_MOIN">
+        <div class="game-header_MOIN">
+            <h1 class="game-title_MOIN">TETRIS<span>_MOIN</span></h1>
+            <div class="game-info_MOIN">
+                <div class="info-box_MOIN">
+                    <span>SCORE</span>
+                    <div id="score_MOIN">0</div>
+                </div>
+                <div class="info-box_MOIN">
+                    <span>LEVEL</span>
+                    <div id="level_MOIN">1</div>
+                </div>
+                <div class="info-box_MOIN">
+                    <span>LINES</span>
+                    <div id="lines_MOIN">0</div>
+                </div>
+                <div class="info-box_MOIN">
+                    <span>SPEED</span>
+                    <div id="speed_MOIN">1x</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area_MOIN">
+            <canvas id="tetris-canvas_MOIN" width="200" height="400"></canvas>
+            <div class="side-panel_MOIN">
+                <div class="panel-section_MOIN">
+                    <h3>NEXT</h3>
+                    <canvas id="next-canvas_MOIN" width="80" height="80"></canvas>
+                </div>
+                <div class="panel-section_MOIN">
+                    <h3>HOLD</h3>
+                    <canvas id="hold-canvas_MOIN" width="80" height="80"></canvas>
+                </div>
+                <div class="panel-section_MOIN controls_MOIN">
+                    <h3>CONTROLS</h3>
+                    <ul>
+                        <li>← → : MOVE</li>
+                        <li>↑ : ROTATE</li>
+                        <li>↓ : SOFT DROP</li>
+                        <li>SPACE : HARD DROP</li>
+                        <li>P : PAUSE</li>
+                        <li>H : HOLD</li>
+                    </ul>
+                </div>
+                <div class="button-group_MOIN">
+                    <button id="start-btn_MOIN" class="game-btn_MOIN">START</button>
+                    <button id="pause-btn_MOIN" class="game-btn_MOIN">PAUSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
