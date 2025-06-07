@@ -1,0 +1,312 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* Theme Switcher */
+.theme-switcher_MOIN {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.theme-btn_MOIN {
+    padding: 8px 15px;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Cyberpunk Theme */
+.cyberpunk-theme_MOIN {
+    background-color: #0a0a1a;
+    color: #00f3ff;
+}
+
+.cyberpunk-theme_MOIN .theme-btn_MOIN {
+    background-color: #0a0a1a;
+    color: #00f3ff;
+}
+
+.cyberpunk-theme_MOIN .cyberpunk-active_MOIN {
+    background-color: #00f3ff;
+    color: #0a0a1a;
+    box-shadow: 0 0 10px #00f3ff;
+}
+
+.cyberpunk-theme_MOIN .game-container_MOIN {
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 15px #ff00ff, 
+                0 0 30px #00f3ff,
+                inset 0 0 15px #ff00ff,
+                inset 0 0 30px #00f3ff;
+    background-color: rgba(10, 10, 30, 0.9);
+}
+
+.cyberpunk-theme_MOIN .game-title_MOIN {
+    text-shadow: 0 0 5px #ff00ff, 
+                 0 0 10px #ff00ff;
+}
+
+.cyberpunk-theme_MOIN .game-title_MOIN span {
+    color: #00f3ff;
+    text-shadow: 0 0 5px #00f3ff, 
+                 0 0 10px #00f3ff;
+}
+
+.cyberpunk-theme_MOIN .info-box_MOIN {
+    border: 1px solid #00f3ff;
+    box-shadow: 0 0 5px #00f3ff;
+}
+
+.cyberpunk-theme_MOIN .panel-section_MOIN {
+    border: 1px solid #ff00ff;
+    box-shadow: 0 0 5px #ff00ff;
+}
+
+.cyberpunk-theme_MOIN #tetris-canvas_MOIN {
+    border: 2px solid #00f3ff;
+    box-shadow: 0 0 10px #00f3ff, 
+                inset 0 0 10px #00f3ff;
+}
+
+.cyberpunk-theme_MOIN .game-btn_MOIN {
+    background-color: transparent;
+    color: #00f3ff;
+    border: 1px solid #00f3ff;
+    box-shadow: 0 0 5px #00f3ff;
+}
+
+.cyberpunk-theme_MOIN .game-btn_MOIN:hover {
+    background-color: rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 10px #00f3ff;
+}
+
+/* Minimalist Theme */
+.minimalist-theme_MOIN {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.minimalist-theme_MOIN .theme-btn_MOIN {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.minimalist-theme_MOIN .cyberpunk-active_MOIN {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.minimalist-theme_MOIN .game-container_MOIN {
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.minimalist-theme_MOIN .game-title_MOIN {
+    color: #333;
+    text-shadow: none;
+}
+
+.minimalist-theme_MOIN .info-box_MOIN {
+    border: 1px solid #333;
+    box-shadow: none;
+}
+
+.minimalist-theme_MOIN .panel-section_MOIN {
+    border: 1px solid #333;
+    box-shadow: none;
+}
+
+.minimalist-theme_MOIN #tetris-canvas_MOIN {
+    border: 2px solid #333;
+    box-shadow: none;
+}
+
+.minimalist-theme_MOIN .game-btn_MOIN {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.minimalist-theme_MOIN .game-btn_MOIN:hover {
+    background-color: #555;
+}
+
+/* Common Styles */
+.game-container_MOIN {
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.game-header_MOIN {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+
+.game-title_MOIN {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.game-info_MOIN {
+    display: flex;
+    gap: 10px;
+}
+
+.info-box_MOIN {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    min-width: 50px;
+}
+
+.info-box_MOIN span {
+    font-size: 0.7rem;
+    display: block;
+}
+
+#score_MOIN, #level_MOIN, #lines_MOIN, #speed_MOIN {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.game-area_MOIN {
+    display: flex;
+    gap: 15px;
+}
+
+#tetris-canvas_MOIN {
+    background-color: rgba(0, 0, 20, 0.7);
+}
+
+.side-panel_MOIN {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+}
+
+.panel-section_MOIN {
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.panel-section_MOIN h3 {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+#next-canvas_MOIN, #hold-canvas_MOIN {
+    background-color: rgba(0, 0, 20, 0.7);
+    margin-top: 5px;
+}
+
+.controls_MOIN ul {
+    padding-left: 15px;
+    margin: 5px 0;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.controls_MOIN li {
+    margin-bottom: 3px;
+}
+
+.button-group_MOIN {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.game-btn_MOIN {
+    padding: 5px 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+/* Game States */
+.game-over_MOIN {
+    animation: gameOverFlash_MOIN 0.5s infinite alternate;
+}
+
+@keyframes gameOverFlash_MOIN {
+    from {
+        box-shadow: 0 0 10px #ff00ff, 
+                    0 0 20px #ff0000,
+                    inset 0 0 10px #ff00ff,
+                    inset 0 0 20px #ff0000;
+        border-color: #ff0000;
+    }
+    to {
+        box-shadow: 0 0 20px #ff00ff, 
+                    0 0 40px #ff0000,
+                    inset 0 0 20px #ff00ff,
+                    inset 0 0 40px #ff0000;
+        border-color: #ff00ff;
+    }
+}
+
+.paused_MOIN {
+    animation: pausedPulse_MOIN 2s infinite;
+}
+
+@keyframes pausedPulse_MOIN {
+    0%, 100% {
+        box-shadow: 0 0 10px #00f3ff, 
+                    0 0 20px #00f3ff,
+                    inset 0 0 10px #00f3ff,
+                    inset 0 0 20px #00f3ff;
+        border-color: #00f3ff;
+    }
+    50% {
+        box-shadow: 0 0 5px #00f3ff, 
+                    0 0 10px #00f3ff,
+                    inset 0 0 5px #00f3ff,
+                    inset 0 0 10px #00f3ff;
+        border-color: #00a3ff;
+    }
+}
+
+.minimalist-theme_MOIN .game-over_MOIN {
+    animation: minimalGameOver_MOIN 0.5s infinite alternate;
+}
+
+@keyframes minimalGameOver_MOIN {
+    from { background-color: rgba(255, 200, 200, 0.5); }
+    to { background-color: rgba(255, 150, 150, 0.5); }
+}
+
+.minimalist-theme_MOIN .paused_MOIN {
+    animation: minimalPaused_MOIN 2s infinite;
+}
+
+@keyframes minimalPaused_MOIN {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
